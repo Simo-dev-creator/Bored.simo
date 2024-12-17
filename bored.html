@@ -1,0 +1,75 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Are You Bored?</title>
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: navy;
+        }
+        p {
+            color: blue;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+        }
+        dialog {
+            border: 2px solid navy;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Heading -->
+    <h1>Are you bored? Got nothing to do?</h1>
+    
+    <!-- Bored Options -->
+    <input type="radio" id="bored" name="status" value="bored">
+    <label for="bored">Yes, I'm bored</label>
+
+    <input type="radio" id="notBored" name="status" value="notBored">
+    <label for="notBored">No, I'm not</label>
+
+    <br>
+    <a href="https://www.boredbutton.com" target="_blank">Click here to enter boredbutton.com</a>
+    <br><br>
+    <button onclick="myDialog.showModal()">Not working?</button>
+
+    <!-- Dialog Box -->
+    <dialog id="myDialog">
+        <p>Please check your internet connection and try again later.</p>
+        <button onclick="myDialog.close()">OK</button>
+    </dialog>
+
+    <!-- Author Note -->
+    <p>by simolino</p>
+
+    <br>
+
+    <!-- Sign-up Form -->
+    <h2>pre-sign up to simo.com!</h2>
+    <form>
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Text Area -->
+    <br>
+    <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Write your comments here..."></textarea>
+
+</body>
+</html>
